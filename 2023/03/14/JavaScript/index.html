@@ -20,30 +20,32 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="学海无涯苦作舟">
-<meta property="og:type" content="website">
-<meta property="og:title" content="HAO">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="JavaScript入门引入JavaScript 内部标签  123&lt;script&gt;    &#x2F;&#x2F;........&lt;&#x2F;script&gt;   外部引入  abs.js 1&#x2F;&#x2F;........  test.html 1&lt;script stc&#x3D;&quot;abs.js&quot;&gt;&lt;&#x2F;script&gt;  基础语法 定义变量  变量类型 变量名&#x3D;变量值;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript">
+<meta property="og:url" content="http://example.com/2023/03/14/JavaScript/index.html">
 <meta property="og:site_name" content="HAO">
-<meta property="og:description" content="学海无涯苦作舟">
+<meta property="og:description" content="JavaScript入门引入JavaScript 内部标签  123&lt;script&gt;    &#x2F;&#x2F;........&lt;&#x2F;script&gt;   外部引入  abs.js 1&#x2F;&#x2F;........  test.html 1&lt;script stc&#x3D;&quot;abs.js&quot;&gt;&lt;&#x2F;script&gt;  基础语法 定义变量  变量类型 变量名&#x3D;变量值;">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-03-14T11:55:13.000Z">
+<meta property="article:modified_time" content="2023-03-14T13:59:23.490Z">
 <meta property="article:author" content="wzhvv">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2023/03/14/JavaScript/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>HAO</title>
+  <title>JavaScript | HAO</title>
   
 
 
@@ -141,9 +143,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -159,10 +162,9 @@
       <meta itemprop="name" content="HAO">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/03/14/JavaScript/" class="post-title-link" itemprop="url">JavaScript</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          JavaScript
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -186,7 +188,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="JavaScript入门"><a href="#JavaScript入门" class="headerlink" title="JavaScript入门"></a>JavaScript入门</h1><h2 id="引入JavaScript"><a href="#引入JavaScript" class="headerlink" title="引入JavaScript"></a>引入JavaScript</h2><ol>
+        <h1 id="JavaScript入门"><a href="#JavaScript入门" class="headerlink" title="JavaScript入门"></a>JavaScript入门</h1><h2 id="引入JavaScript"><a href="#引入JavaScript" class="headerlink" title="引入JavaScript"></a>引入JavaScript</h2><ol>
 <li>内部标签</li>
 </ol>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    <span class="comment">//........</span></span></span><br><span class="line"><span class="language-javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -260,212 +262,30 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Person person=new Person(1,2,3,4);</span></span><br><span class="line"><span class="keyword">var</span> person&#123;</span><br><span class="line">    <span class="attr">name</span>:<span class="string">&quot;张三&quot;</span>,</span><br><span class="line">    <span class="attr">age</span>:<span class="number">3</span>,</span><br><span class="line">    <span class="attr">tags</span>:[<span class="string">&#x27;js&#x27;</span>,<span class="string">&#x27;java&#x27;</span>,<span class="string">&#x27;web&#x27;</span>]      </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/03/12/mysql/">
+        
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="wzhvv">
-      <meta itemprop="description" content="学海无涯苦作舟">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="HAO">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/03/12/mysql/" class="post-title-link" itemprop="url">mysql学习</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2023-03-12 21:35:57" itemprop="dateCreated datePublished" datetime="2023-03-12T21:35:57+08:00">2023-03-12</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-03-14 21:19:26" itemprop="dateModified" datetime="2023-03-14T21:19:26+08:00">2023-03-14</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="基础MYSQL学习"><a href="#基础MYSQL学习" class="headerlink" title="基础MYSQL学习"></a>基础MYSQL学习</h1><h2 id="点击进入学习视频"><a href="#点击进入学习视频" class="headerlink" title="点击进入学习视频"></a><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Kr4y1i7ru?p=1&vd_source=807f4136109f993802c3f5a8bd0986c8">点击进入学习视频</a></h2><h2 id="DDL"><a href="#DDL" class="headerlink" title="DDL"></a>DDL</h2><h3 id="库操作"><a href="#库操作" class="headerlink" title="库操作"></a>库操作</h3><ul>
-<li>查询所有数据库—show databases;</li>
-<li>查询当前数据库—select database();</li>
-<li>创建—create database[if not exits] 数据库名 [default charset 字符集] [collate 排序规则];</li>
-<li>删除—drop database [if not exits] 数据库名</li>
-<li>使用—use 数据库名</li>
-</ul>
-<h3 id="表操作"><a href="#表操作" class="headerlink" title="表操作"></a>表操作</h3><ul>
-<li><p>创建—create table 表名(</p>
-<p>字段1  字段1类型 [comment] 注释,</p>
-<p>…….</p>
-<p>)[comment 表注释];</p>
-</li>
-<li><p>查询—查询当前数据库所有表—show tables;</p>
-</li>
-</ul>
-<p>​       查询表结构—desc 表名;</p>
-<p>​       查询指定表的建表语句—show create table 表名;</p>
-<ul>
-<li>修改—添加字段—alter table 表名 add 字段名 类型(长度) [comment 注释] [约束];</li>
-</ul>
-<p>​         —修改数据信息—alter table 表名 modify 字段名 新数据类型(长度);</p>
-<p>​         —修改字段名和字段类型—alter table 表名 change 旧字段名 新字段名 类型(长度) [comment 注释] [约束];</p>
-<p>​         —删除字段—alter table 表名 drop 字段名;</p>
-<p>​         —修改表名—alter table 表名 rename to 新表名;</p>
-<ul>
-<li>删除—删除表—drop table [if exits] 表名;</li>
-</ul>
-<p>​         —删除指定表，并重新创建该表，表中数据全被删除—truncate table 表名;</p>
-<h2 id="DQL"><a href="#DQL" class="headerlink" title="DQL"></a>DQL</h2><h3 id="基本查询"><a href="#基本查询" class="headerlink" title="基本查询"></a>基本查询</h3><ul>
-<li><p>查询多个字段</p>
-<p>—select 字段1，字段2…from 表名;</p>
-<p>—select * from 表名;</p>
-</li>
-<li><p>设置别名</p>
-</li>
-</ul>
-<p>​       —select 字段1[as 别名1]，字段2[as 别名2]…from 表名;</p>
-<ul>
-<li><p>去除重复记录</p>
-<p>—select distinct 字段列表 from 表名;</p>
-</li>
-</ul>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2023/03/12/mysql/" rel="prev" title="mysql学习">
+      <i class="fa fa-chevron-left"></i> mysql学习
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/03/11/markdawn/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="wzhvv">
-      <meta itemprop="description" content="学海无涯苦作舟">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="HAO">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/03/11/markdawn/" class="post-title-link" itemprop="url">MarkDown学习</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2023-03-11 15:38:49 / 修改时间：16:11:28" itemprop="dateCreated datePublished" datetime="2023-03-11T15:38:49+08:00">2023-03-11</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="MarkDown学习"><a href="#MarkDown学习" class="headerlink" title="MarkDown学习"></a>MarkDown学习</h1><h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>#+空格创建标题，根据#数量创建不同级标题</p>
-<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><p>** ** 加粗</p>
-<p><em>hello world</em>  斜体 一个*号</p>
-<p>~~ ~~ 删除线</p>
-<p><del>hello world</del></p>
-<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><blockquote>
-<p>大于号</p>
-</blockquote>
-<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><p>三个-号或者三个*号</p>
-<hr>
-<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p>![小王子](C:\Users\27458\Pictures\Saved Pictures\v2-3903c39d4752e56c9617d42791d0c7f2_r.jpg)</p>
-<p>!+[]+（图片路径）</p>
-<h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><p><a target="_blank" rel="noopener" href="https://wzhvv.github.io/">点击跳转到我的博客</a></p>
-<p>[]+(地址)</p>
-<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><ol>
-<li>1+.+空格</li>
-<li>有序号的换行</li>
-</ol>
-<ul>
-<li>-+空格</li>
-<li>无序号的换行</li>
-</ul>
-<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p>![表格的使用](C:\Users\27458\Pictures\Camera Roll\屏幕截图 2023-03-11 153044.png)</p>
-<p>然后进入代码模式删掉之间的空格</p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">​```+要写的代码样式，如java或c</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
@@ -518,6 +338,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JavaScript%E5%85%A5%E9%97%A8"><span class="nav-number">1.</span> <span class="nav-text">JavaScript入门</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%95%E5%85%A5JavaScript"><span class="nav-number">1.1.</span> <span class="nav-text">引入JavaScript</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95"><span class="nav-number">1.2.</span> <span class="nav-text">基础语法</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
