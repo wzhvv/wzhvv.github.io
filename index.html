@@ -510,7 +510,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-03-16 21:33:00" itemprop="dateModified" datetime="2023-03-16T21:33:00+08:00">2023-03-16</time>
+                <time title="修改时间：2023-03-17 20:19:22" itemprop="dateModified" datetime="2023-03-17T20:19:22+08:00">2023-03-17</time>
               </span>
 
           
@@ -596,6 +596,45 @@
 <p>​       —select 字段列表 from 表名 limit 起始索引，查询记录数;</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">起始索引从<span class="number">0</span>开始，起始索引=（查询页码-<span class="number">1</span>）*每页显示记录数。</span><br><span class="line">    select * from emp where gender=<span class="string">&#x27;男&#x27;</span> and between <span class="number">20</span> and <span class="number">40</span> order by age,entrydate desc limit <span class="number">5</span>;</span><br></pre></td></tr></table></figure>
 
+<h2 id="DCL"><a href="#DCL" class="headerlink" title="DCL"></a>DCL</h2><h3 id="管理用户"><a href="#管理用户" class="headerlink" title="管理用户"></a>管理用户</h3><ul>
+<li>查询用户</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">use mysql;</span><br><span class="line">select * from user;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>创建用户</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create user &#x27;用户名&#x27; @ &#x27;主机名&#x27; identified by &#x27;密码&#x27;;   //主机名可以用%通配-&gt;任意主机都可访问</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>修改用户密码</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alter user &#x27;用户名&#x27; @ &#x27;主机名&#x27; identified with mysql_native_password by &#x27;新密码&#x27;;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>删除用户</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">drop user &#x27;用户名&#x27; @ &#x27;主机名&#x27;;</span><br></pre></td></tr></table></figure>
+
+<h3 id="查询权限"><a href="#查询权限" class="headerlink" title="查询权限"></a>查询权限</h3><ul>
+<li>查询权限</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show grants for &#x27;用户名&#x27; @ &#x27;主机名&#x27;;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>授予权限</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grant 权限列表 on 数据库名.表名 to &#x27;用户名&#x27; @ &#x27;主机名&#x27;;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>撤销权限</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">revoke 权限列表 on 数据库名.表名 from &#x27;用户名&#x27; @ &#x27;主机名&#x27;;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>注意：多个权限之间，使用逗号隔开</li>
+<li>授权时，数据库名和表名可以使用*进行通配，代表所有。</li>
+</ul>
 
       
     </div>
