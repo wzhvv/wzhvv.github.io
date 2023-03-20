@@ -28,7 +28,7 @@
 <meta property="og:description" content="基础MYSQL学习点击进入学习视频DDL库操作 查询所有数据库—show databases; 查询当前数据库—select database(); 创建—create database[if not exits] 数据库名 [default charset 字符集] [collate 排序规则]; 删除—drop database [if not exits] 数据库名 使用—use 数据库名">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-03-12T13:35:57.000Z">
-<meta property="article:modified_time" content="2023-03-17T12:19:22.181Z">
+<meta property="article:modified_time" content="2023-03-20T13:19:00.018Z">
 <meta property="article:author" content="wzhvv">
 <meta name="twitter:card" content="summary">
 
@@ -114,7 +114,7 @@
   <ul id="menu" class="main-menu menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+    <a href="/%20%3Ci%20class=%22fal%20fa-cheeseburger%22%20/%3E" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
   </li>
         <li class="menu-item menu-item-archives">
@@ -180,7 +180,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-03-17 20:19:22" itemprop="dateModified" datetime="2023-03-17T20:19:22+08:00">2023-03-17</time>
+                <time title="修改时间：2023-03-20 21:19:00" itemprop="dateModified" datetime="2023-03-20T21:19:00+08:00">2023-03-20</time>
               </span>
 
           
@@ -223,6 +223,35 @@
 <li>删除—删除表—drop table [if exits] 表名;</li>
 </ul>
 <p>​         —删除指定表，并重新创建该表，表中数据全被删除—truncate table 表名;</p>
+<h2 id="DML"><a href="#DML" class="headerlink" title="DML"></a>DML</h2><h3 id="添加数据"><a href="#添加数据" class="headerlink" title="添加数据"></a>添加数据</h3><ul>
+<li><p>insert into 表名 (字段1，字段2，…) values (值1，值2，…)                               —给指定字段添加数据</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">insert into employee(id,name) values(1,&#x27;张三&#x27;);</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>insertt into 表名 values (值1，值2，…)                                                                —给全部字段添加数据</p>
+</li>
+<li><p>insert into 表名 (字段1，字段2，…) values (值1，值2，…),(值1，值2，…);    </p>
+<p>insert into 表名 values (值1，值2，…),(值1，值2，…),(值1，值2，…);            —批量添加数据</p>
+<ul>
+<li>注意：</li>
+<li>插入数据时，指定的字段顺序需要与值的顺序是一一对应的</li>
+<li>字符串和日期型数据应该包含在引号中</li>
+<li>插入的数据大小，应该在字段的规定范围内</li>
+</ul>
+</li>
+</ul>
+<h3 id="修改数据"><a href="#修改数据" class="headerlink" title="修改数据"></a>修改数据</h3><ul>
+<li><p>update 表名 set 字段1&#x3D;值1,字段2&#x3D;值2,…..[where 一条件]</p>
+</li>
+<li><p>注意：修改语句的条件可以有，也可以没有，如果没有条件，则会修改整张表的数据。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update employee set name =&#x27;wzhvv&#x27;,gender=&#x27;男&#x27; where id=1;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="删除数据"><a href="#删除数据" class="headerlink" title="删除数据"></a>删除数据</h3><ul>
+<li>delete from 表名 [where 条件]</li>
+<li>注意：delete语句的条件可以有，也可以没有，如果没有条件，则会删除整张表的所有数据</li>
+<li>delete语句不能删除某一个字段的值(可以使用update)</li>
+</ul>
 <h2 id="DQL"><a href="#DQL" class="headerlink" title="DQL"></a>DQL</h2><h3 id="基本查询"><a href="#基本查询" class="headerlink" title="基本查询"></a>基本查询</h3><ul>
 <li><p>查询多个字段</p>
 <p>—select 字段1，字段2…from 表名;</p>
@@ -305,6 +334,52 @@
 <li>注意：多个权限之间，使用逗号隔开</li>
 <li>授权时，数据库名和表名可以使用*进行通配，代表所有。</li>
 </ul>
+<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select 函数(参数)</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="字符串函数"><a href="#字符串函数" class="headerlink" title="字符串函数"></a>字符串函数</h3><ul>
+<li>concat(s1,s2…sn)                             &#x2F;&#x2F;字符串拼接，s1,s2…sn拼接成一个字符串</li>
+<li>lower(str)                                          &#x2F;&#x2F;将字符串str全部转为小写</li>
+<li>upper(str)                                         &#x2F;&#x2F;将字符串str全部转为大写</li>
+<li>lapd(str,n,pad)                                 &#x2F;&#x2F;左填充，用字符串pad对str的左边进行填充，达到n个字符串长度</li>
+<li>rpad(str,n,pad)                                &#x2F;&#x2F;右填充，用字符串pad对str的右边进行填充，达到n个字符串长度</li>
+<li>trim(str)                                            &#x2F;&#x2F;去掉字符串头部和尾部的空格</li>
+<li>substring(str,start,len)                   &#x2F;&#x2F;返回从字符串str从start位置起的len个长度的字符串</li>
+</ul>
+<h3 id="数值函数"><a href="#数值函数" class="headerlink" title="数值函数"></a>数值函数</h3><ul>
+<li>ceil(x)                         &#x2F;&#x2F;向上取整</li>
+<li>floor(x)                       &#x2F;&#x2F;向下取整</li>
+<li>mod(x,y)                    &#x2F;&#x2F;返回x&#x2F;y的模，即x%y的值</li>
+<li>rand()                         &#x2F;&#x2F;返回0-1的随机数</li>
+<li>round(x,y)                  &#x2F;&#x2F;求参数x的四舍五入的值，保留y位小数</li>
+</ul>
+<h3 id="日期函数"><a href="#日期函数" class="headerlink" title="日期函数"></a>日期函数</h3><ul>
+<li>curdate()                                                                       &#x2F;&#x2F;返回当前日期</li>
+<li>curtimne()                                                                    &#x2F;&#x2F;返回当前时间</li>
+<li>now()                                                                            &#x2F;&#x2F;返回当前日期和时间</li>
+<li>YEAR(date)                                                                  &#x2F;&#x2F;获取指定date的年份</li>
+<li>MONTH(date)                                                             &#x2F;&#x2F;获取指定date的月份</li>
+<li>DAY(date)                                                                    &#x2F;&#x2F;获取指定date的日期</li>
+<li>date_add(date,INTERVAL expr type)                      &#x2F;&#x2F;返回一个日期&#x2F;时间值加上一个时间间隔expr和type类型后的时间值</li>
+<li>datediff(date1,date2)                                               &#x2F;&#x2F;返回起始时间date1 和date2之间的天数</li>
+</ul>
+<h3 id="流程函数"><a href="#流程函数" class="headerlink" title="流程函数"></a>流程函数</h3><ul>
+<li>if(value,t,f)                                                                                            &#x2F;&#x2F;如果value为true，返回t，否则返回f</li>
+<li>ifnull(value1,value2)                                                                           &#x2F;&#x2F;如果value1不为空，返回value1，否则返回value2</li>
+<li>case when [val1] then [res1]…else[default] end                           &#x2F;&#x2F;如果val为true，返回res1，…否则返回default默认值</li>
+<li>case [expr] when[val1] then [res1]…else [default] end               &#x2F;&#x2F;如果expr的值等于val1，返回res1， …否则返回default默认值</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">select</span><br><span class="line">    name,</span><br><span class="line">    (case workaddress when &#x27;北京&#x27; then &#x27;一线城市&#x27; when &#x27;上海&#x27; then &#x27;一线城市&#x27; else &#x27;二线城市&#x27; end) as &#x27;工作地址&#x27;</span><br><span class="line">from emp;</span><br></pre></td></tr></table></figure>
+
+<h2 id="约束"><a href="#约束" class="headerlink" title="约束"></a>约束</h2><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><ul>
+<li>约束是作用于表中字段上的规则，用于限制存储在表中的数据。</li>
+</ul>
+<h3 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h3><ul>
+<li>保证数据库中数据的正确，有效性和完整性。</li>
+</ul>
+<h3 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">非空约束 --- 限制该字段的数据不能为null --- not null</span><br><span class="line">唯一约束 --- 保证该字段的所有数据都是唯一，不重复的 --- unique</span><br><span class="line">主键约束 --- 主键是一行数据的唯一标识，要求非空且唯一 --- primary key</span><br><span class="line">默认约束 --- 保存数据时，如果未指定该字段的值，则采用默认值 --- default</span><br><span class="line">检查约束 --- 保证字段值满足某一个条件 --- check</span><br><span class="line">外键约束 --- 用来让两张表的数据之间建立连接，保证数据的一致性和完整性 --- foreign key</span><br><span class="line">注意：约束是作用于表中字段上的，可以在创建表/修改表的时候添加约束。</span><br></pre></td></tr></table></figure>
+
 
     </div>
 
@@ -385,7 +460,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9F%BA%E7%A1%80MYSQL%E5%AD%A6%E4%B9%A0"><span class="nav-number">1.</span> <span class="nav-text">基础MYSQL学习</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%82%B9%E5%87%BB%E8%BF%9B%E5%85%A5%E5%AD%A6%E4%B9%A0%E8%A7%86%E9%A2%91"><span class="nav-number">1.1.</span> <span class="nav-text">点击进入学习视频</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DDL"><span class="nav-number">1.2.</span> <span class="nav-text">DDL</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BA%93%E6%93%8D%E4%BD%9C"><span class="nav-number">1.2.1.</span> <span class="nav-text">库操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A1%A8%E6%93%8D%E4%BD%9C"><span class="nav-number">1.2.2.</span> <span class="nav-text">表操作</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DQL"><span class="nav-number">1.3.</span> <span class="nav-text">DQL</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%9F%A5%E8%AF%A2"><span class="nav-number">1.3.1.</span> <span class="nav-text">基本查询</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DCL"><span class="nav-number">1.4.</span> <span class="nav-text">DCL</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AE%A1%E7%90%86%E7%94%A8%E6%88%B7"><span class="nav-number">1.4.1.</span> <span class="nav-text">管理用户</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9F%A5%E8%AF%A2%E6%9D%83%E9%99%90"><span class="nav-number">1.4.2.</span> <span class="nav-text">查询权限</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9F%BA%E7%A1%80MYSQL%E5%AD%A6%E4%B9%A0"><span class="nav-number">1.</span> <span class="nav-text">基础MYSQL学习</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%82%B9%E5%87%BB%E8%BF%9B%E5%85%A5%E5%AD%A6%E4%B9%A0%E8%A7%86%E9%A2%91"><span class="nav-number">1.1.</span> <span class="nav-text">点击进入学习视频</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DDL"><span class="nav-number">1.2.</span> <span class="nav-text">DDL</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BA%93%E6%93%8D%E4%BD%9C"><span class="nav-number">1.2.1.</span> <span class="nav-text">库操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A1%A8%E6%93%8D%E4%BD%9C"><span class="nav-number">1.2.2.</span> <span class="nav-text">表操作</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DML"><span class="nav-number">1.3.</span> <span class="nav-text">DML</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E6%95%B0%E6%8D%AE"><span class="nav-number">1.3.1.</span> <span class="nav-text">添加数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E6%95%B0%E6%8D%AE"><span class="nav-number">1.3.2.</span> <span class="nav-text">修改数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%A0%E9%99%A4%E6%95%B0%E6%8D%AE"><span class="nav-number">1.3.3.</span> <span class="nav-text">删除数据</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DQL"><span class="nav-number">1.4.</span> <span class="nav-text">DQL</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%9F%A5%E8%AF%A2"><span class="nav-number">1.4.1.</span> <span class="nav-text">基本查询</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DCL"><span class="nav-number">1.5.</span> <span class="nav-text">DCL</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AE%A1%E7%90%86%E7%94%A8%E6%88%B7"><span class="nav-number">1.5.1.</span> <span class="nav-text">管理用户</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9F%A5%E8%AF%A2%E6%9D%83%E9%99%90"><span class="nav-number">1.5.2.</span> <span class="nav-text">查询权限</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%87%BD%E6%95%B0"><span class="nav-number">1.6.</span> <span class="nav-text">函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%87%BD%E6%95%B0"><span class="nav-number">1.6.1.</span> <span class="nav-text">字符串函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E5%80%BC%E5%87%BD%E6%95%B0"><span class="nav-number">1.6.2.</span> <span class="nav-text">数值函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%A5%E6%9C%9F%E5%87%BD%E6%95%B0"><span class="nav-number">1.6.3.</span> <span class="nav-text">日期函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%81%E7%A8%8B%E5%87%BD%E6%95%B0"><span class="nav-number">1.6.4.</span> <span class="nav-text">流程函数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BA%A6%E6%9D%9F"><span class="nav-number">1.7.</span> <span class="nav-text">约束</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A6%82%E8%BF%B0"><span class="nav-number">1.7.1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9B%AE%E7%9A%84"><span class="nav-number">1.7.2.</span> <span class="nav-text">目的</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E7%B1%BB"><span class="nav-number">1.7.3.</span> <span class="nav-text">分类</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -399,7 +474,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
