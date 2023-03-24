@@ -162,6 +162,71 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/03/23/JavaWeb/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="wzhvv">
+      <meta itemprop="description" content="学海无涯苦作舟">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HAO">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/03/23/JavaWeb/" class="post-title-link" itemprop="url">JavaWeb开发</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-03-23 10:22:26 / 修改时间：10:26:34" itemprop="dateCreated datePublished" datetime="2023-03-23T10:22:26+08:00">2023-03-23</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="JavaWeb开发"><a href="#JavaWeb开发" class="headerlink" title="JavaWeb开发"></a>JavaWeb开发</h1><h2 id="HTML快速入门"><a href="#HTML快速入门" class="headerlink" title="HTML快速入门"></a>HTML快速入门</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>HTML入门<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span>HELLO HTML<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">image</span> <span class="attr">src</span>=<span class="string">&quot;v2-ed0f23aed22d79c440935c9d1b0eb580_r.jpg&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>HTML标签不区分大小写</li>
+<li>HTML标签属性值单双引号都可以</li>
+<li>HTML语法松散</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2023/03/19/maven/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -188,6 +253,13 @@
 
               <time title="创建时间：2023-03-19 15:49:32" itemprop="dateCreated datePublished" datetime="2023-03-19T15:49:32+08:00">2023-03-19</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-03-23 20:24:25" itemprop="dateModified" datetime="2023-03-23T20:24:25+08:00">2023-03-23</time>
+              </span>
 
           
 
@@ -200,7 +272,24 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          
+          <h1 id="Maven"><a href="#Maven" class="headerlink" title="Maven"></a>Maven</h1><h2 id="maven基础概念"><a href="#maven基础概念" class="headerlink" title="maven基础概念"></a>maven基础概念</h2><h3 id="仓库"><a href="#仓库" class="headerlink" title="仓库"></a>仓库</h3><ul>
+<li>仓库：用于存储资源，包含各种jar包</li>
+<li>仓库分类：</li>
+</ul>
+<ol>
+<li><p>本地仓库：自己电脑上存储资源的仓库，连接远程仓库获取资源</p>
+</li>
+<li><p>远程仓库：非本机电脑上的仓库，为本地仓库提供资源</p>
+<p>中央仓库：Maven团队维护，存储所有资源的仓库</p>
+<p>私服：部门&#x2F;公司范围内存储资源的仓库，从中央仓库获取资源</p>
+</li>
+<li><p>私服的作用：</p>
+<p>保存具有版权的资源，包含购买和自主研发的jar</p>
+<p>中央仓库中的jar都是开源的，不能存储具有版权的资源</p>
+<p>一定范围内共享资源，仅对内部开放，不对外共享</p>
+</li>
+</ol>
+
       
     </div>
 
@@ -582,7 +671,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-03-22 13:23:22" itemprop="dateModified" datetime="2023-03-22T13:23:22+08:00">2023-03-22</time>
+                <time title="修改时间：2023-03-24 20:57:04" itemprop="dateModified" datetime="2023-03-24T20:57:04+08:00">2023-03-24</time>
               </span>
 
           
@@ -599,8 +688,8 @@
           <h1 id="基础MYSQL学习"><a href="#基础MYSQL学习" class="headerlink" title="基础MYSQL学习"></a>基础MYSQL学习</h1><h2 id="点击进入学习视频"><a href="#点击进入学习视频" class="headerlink" title="点击进入学习视频"></a><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Kr4y1i7ru?p=1&vd_source=807f4136109f993802c3f5a8bd0986c8">点击进入学习视频</a></h2><h2 id="DDL"><a href="#DDL" class="headerlink" title="DDL"></a>DDL</h2><h3 id="库操作"><a href="#库操作" class="headerlink" title="库操作"></a>库操作</h3><ul>
 <li>查询所有数据库—show databases;</li>
 <li>查询当前数据库—select database();</li>
-<li>创建—create database[if not exits] 数据库名 [default charset 字符集] [collate 排序规则];</li>
-<li>删除—drop database [if not exits] 数据库名</li>
+<li>创建—create database[if not exists] 数据库名 [default charset 字符集] [collate 排序规则];</li>
+<li>删除—drop database [if not exists] 数据库名</li>
 <li>使用—use 数据库名</li>
 </ul>
 <h3 id="表操作"><a href="#表操作" class="headerlink" title="表操作"></a>表操作</h3><ul>
@@ -615,23 +704,27 @@
 <p>​       查询表结构—desc 表名;</p>
 <p>​       查询指定表的建表语句—show create table 表名;</p>
 <ul>
-<li>修改—添加字段—alter table 表名 add 字段名 类型(长度) [comment 注释] [约束];</li>
+<li><p>修改</p>
+<p>—添加字段—alter table 表名 add 字段名 类型(长度) [comment 注释] [约束];</p>
+</li>
 </ul>
-<p>​         —修改数据信息—alter table 表名 modify 字段名 新数据类型(长度);</p>
-<p>​         —修改字段名和字段类型—alter table 表名 change 旧字段名 新字段名 类型(长度) [comment 注释] [约束];</p>
-<p>​         —删除字段—alter table 表名 drop 字段名;</p>
-<p>​         —修改表名—alter table 表名 rename to 新表名;</p>
+<p>​       —修改数据类型—alter table 表名 modify 字段名 新数据类型(长度);</p>
+<p>​       —修改字段名和字段类型—alter table 表名 change 旧字段名 新字段名 类型(长度) [comment 注释] [约束];</p>
+<p>​       —删除字段—alter table 表名 drop 字段名;</p>
+<p>​       —修改表名—alter table 表名 rename to 新表名;</p>
 <ul>
-<li>删除—删除表—drop table [if exits] 表名;</li>
+<li><p>删除</p>
+<p>—删除表—drop table [if exits] 表名;</p>
+</li>
 </ul>
-<p>​         —删除指定表，并重新创建该表，表中数据全被删除—truncate table 表名;</p>
+<p>​       —删除指定表，并重新创建该表，表中数据全被删除，表结构还在—truncate table 表名;</p>
 <h2 id="DML"><a href="#DML" class="headerlink" title="DML"></a>DML</h2><h3 id="添加数据"><a href="#添加数据" class="headerlink" title="添加数据"></a>添加数据</h3><ul>
 <li><p>insert into 表名 (字段1，字段2，…) values (值1，值2，…)                               —给指定字段添加数据</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">insert into employee(id,name) values(1,&#x27;张三&#x27;);</span><br></pre></td></tr></table></figure>
 
 
 </li>
-<li><p>insertt into 表名 values (值1，值2，…)                                                                —给全部字段添加数据</p>
+<li><p>insert into 表名 values (值1，值2，…)                                                                —给全部字段添加数据</p>
 </li>
 <li><p>insert into 表名 (字段1，字段2，…) values (值1，值2，…),(值1，值2，…);    </p>
 <p>insert into 表名 values (值1，值2，…),(值1，值2，…),(值1，值2，…);            —批量添加数据</p>
@@ -677,7 +770,7 @@
 <li>聚合函数</li>
 </ul>
 <p>​        —select 聚合函数（字段列表）from 表名;      &#x2F;&#x2F;null值不参与所有聚合函数运算</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">count      <span class="comment">//统计数量</span></span><br><span class="line">avg        <span class="comment">//平均值</span></span><br><span class="line">....</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">count      <span class="comment">//统计数量</span></span><br><span class="line">avg        <span class="comment">//平均值</span></span><br><span class="line">....</span><br><span class="line">select <span class="title function_">avg</span><span class="params">(e.salary)</span> from emp.e,dept d where e.dept_id=d.id and d.name=<span class="string">&#x27;研发部&#x27;</span>;</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>分组查询</li>
@@ -802,13 +895,74 @@
 <h3 id="多表查询-1"><a href="#多表查询-1" class="headerlink" title="多表查询"></a>多表查询</h3><ul>
 <li>内连接</li>
 </ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">隐式内连接：select 字段列表 from 表1,表2 where 条件...;</span><br><span class="line">显式内链接：select 字段列表 from 表1 [inner](可删) join 表2 on 连接条件...;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">隐式内连接：select 字段列表 from 表1,表2 where 条件...;</span><br><span class="line">显式内链接：select 字段列表 from 表1 [inner](可删) join 表2 on 连接条件...;</span><br><span class="line">隐式内连接 语法更简单，显示内连接 效率更高，两个在查询结果上来说是相同的</span><br><span class="line">例：select e.name,e.age,e.job,d,name from emp e inner join dept d on e.dept_id=d.id where e.age&lt;30;</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>外连接</li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">左外连接：select 字段列表 from 表1 left [outer](可删) join 表2 on 条件...;</span><br><span class="line">右外连接：select 字段列表 from 表1 right [outer](可删) join 表2 on 条件...;</span><br></pre></td></tr></table></figure>
 
+<ul>
+<li>自连接</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select 字段列表 from 表A 别名A join 表A 别名B on 条件...;</span><br><span class="line">自连接查询，可以是内连接查询，也可以是外连接查询。</span><br><span class="line">注意：必须使用表别名</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>联合查询</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">select 字段列表 from 表A ...</span><br><span class="line">union [all]</span><br><span class="line">select 字段列表 from 表B ...;</span><br><span class="line">对于联合查询的多张表的列数必须保持一致，字段类型也必须保持一致</span><br><span class="line">union all会将全部的数据直接合并到一起，union会对合并后的数据去重</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>子查询</li>
+</ul>
+<ol>
+<li>列子查询</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">子查询返回的结果是一列(可以是多行)，这种子查询称为列子查询。</span><br><span class="line">常用操作符：in , not in , any , some , all</span><br><span class="line">in --- 在指定的集合范围内，多选一</span><br><span class="line">not in --- 不在指定的集合范围内</span><br><span class="line">all --- 子查询返回列表中，在任意一个满足即可</span><br><span class="line">some --- 与any等同，使用some的地方都可以用any</span><br><span class="line">all --- 子查询返回列表的所有值都必须满足</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>行子查询</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">子查询返回的结果是一行(可以是多列)，这种子查询称为行子查询。</span><br><span class="line">常用的操作符：= , &lt;&gt; , in , not in</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>表字查询</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">子查询返回结果是多行多列，这种子查询称为表子查询</span><br><span class="line">常用的操作符：in</span><br></pre></td></tr></table></figure>
+
+<h2 id="事务"><a href="#事务" class="headerlink" title="事务"></a>事务</h2><h3 id="事务操作"><a href="#事务操作" class="headerlink" title="事务操作"></a>事务操作</h3><ul>
+<li>查看&#x2F;设置事务提交方式</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">select @@autocommit;</span><br><span class="line">set @@sutocommit=0;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>提交事务</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">commit;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>回滚事务</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rollback;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>开启事务</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">start transaction 或 begin</span><br></pre></td></tr></table></figure>
+
+<p>提交事务和回滚事务同上</p>
+<h3 id="事务四大特性"><a href="#事务四大特性" class="headerlink" title="事务四大特性"></a>事务四大特性</h3><ul>
+<li>原子性(Atomicity):事务是不可分割的最小操作单元，要么全部成功，要么全部失败。</li>
+<li>一致性(Consistency):事务完成时，必须使所有的数据都保持一致状态。</li>
+<li>隔离性(Isolation):数据库系统提供的隔离机制，保证事务在不受外部并发操作影响的独立环境下运行。</li>
+<li>持久性(Durability):事务一旦提交或回滚，它对数据库中的数据的改变就是永久的。</li>
+</ul>
+<h3 id="并发事务问题"><a href="#并发事务问题" class="headerlink" title="并发事务问题"></a>并发事务问题</h3><ul>
+<li>脏读：一个事务读到另外一个事务还没有提交的数据。</li>
+<li>不可重复读：一个事务先后读取同一条记录，但两次读取的数据不同，称之为不可重复读。</li>
+<li>幻读：一个事务按照条件查询数据时，没有对应的数据行，但是在插入数据时，又发现这行数据已经存在，好像出现了幻影。</li>
+</ul>
+<h3 id="事务隔离级别"><a href="#事务隔离级别" class="headerlink" title="事务隔离级别"></a>事务隔离级别</h3><p><img src="/mysql.assets/Snipaste_2023-03-24_20-32-07.png" alt="事务隔离等级"></p>
 
       
     </div>
@@ -976,7 +1130,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
