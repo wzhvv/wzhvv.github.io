@@ -572,7 +572,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-03-26 15:34:14" itemprop="dateModified" datetime="2023-03-26T15:34:14+08:00">2023-03-26</time>
+                <time title="修改时间：2023-03-26 16:01:52" itemprop="dateModified" datetime="2023-03-26T16:01:52+08:00">2023-03-26</time>
               </span>
 
           <br>
@@ -614,10 +614,7 @@
 <p>test.html</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;abs.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="基础语法"><a href="#基础语法" class="headerlink" title="基础语法"></a>基础语法</h2><ol>
-<li>定义变量</li>
-</ol>
-<ul>
+<h2 id="基础语法"><a href="#基础语法" class="headerlink" title="基础语法"></a>基础语法</h2><h3 id="定义变量"><a href="#定义变量" class="headerlink" title="定义变量"></a>定义变量</h3><ul>
 <li>var定义的变量可以存放不同类型的值</li>
 <li>作用域比较大，全局变量</li>
 <li>可以重复定义</li>
@@ -628,40 +625,25 @@
 <p>Infinity     &#x2F;&#x2F;表示无限大</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> age=<span class="number">18</span>;</span><br><span class="line"><span class="keyword">var</span> name=<span class="string">&quot;张三&quot;</span>;</span><br></pre></td></tr></table></figure>
 
-<ol start="2">
-<li>条件控制</li>
-</ol>
-<p>同java ,  console.log(age) 可以在浏览器的控制台打印变量信息</p>
-<ol start="3">
-<li>等于</li>
-</ol>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">==    <span class="comment">//类型不一样，值一样，判断为true</span></span><br><span class="line">===   <span class="comment">//绝对等于，类型不一样，值一样，判断为false</span></span><br></pre></td></tr></table></figure>
+<h3 id="条件控制"><a href="#条件控制" class="headerlink" title="条件控制"></a>条件控制</h3><p>同java ,  console.log(age) 可以在浏览器的控制台打印变量信息</p>
+<h3 id="等于"><a href="#等于" class="headerlink" title="等于"></a>等于</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">==    <span class="comment">//类型不一样，值一样，判断为true</span></span><br><span class="line">===   <span class="comment">//绝对等于，类型不一样，值一样，判断为false</span></span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>NAN&#x3D;&#x3D;&#x3D;NAN,这个与所有值都不相等，包括自己。false</li>
 <li>只能通过isNaN(NaN)来判断这个数是否是NaN</li>
 </ul>
-<ol start="4">
-<li>浮点数问题</li>
-</ol>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="number">1</span>/<span class="number">3</span>)===(<span class="number">1</span>-<span class="number">2</span>/<span class="number">3</span>)<span class="comment">//false</span></span><br></pre></td></tr></table></figure>
+<h3 id="浮点数问题"><a href="#浮点数问题" class="headerlink" title="浮点数问题"></a>浮点数问题</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="number">1</span>/<span class="number">3</span>)===(<span class="number">1</span>-<span class="number">2</span>/<span class="number">3</span>)<span class="comment">//false</span></span><br></pre></td></tr></table></figure>
 
 <blockquote>
 <p>尽量避免使用浮点数进行运算，存在精度问题！</p>
 </blockquote>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Math</span>.<span class="title function_">abs</span>(<span class="number">1</span>/<span class="number">3</span>-(<span class="number">1</span>-<span class="number">2</span>/<span class="number">3</span>))&lt;<span class="number">0.00000001</span></span><br></pre></td></tr></table></figure>
 
-<ol start="5">
-<li>null和undefined</li>
-</ol>
-<ul>
+<h3 id="null和undefined"><a href="#null和undefined" class="headerlink" title="null和undefined"></a>null和undefined</h3><ul>
 <li>null                    &#x2F;&#x2F;空</li>
 <li>undefined        &#x2F;&#x2F;未定义</li>
 </ul>
-<ol start="6">
-<li>数组</li>
-</ol>
-<ul>
+<h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><ul>
 <li>Java的数值必须是相同类型的对象，JS中不需要这样</li>
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="string">&#x27;hello&#x27;</span>,<span class="literal">null</span>,<span class="literal">true</span>];</span><br><span class="line"><span class="keyword">new</span> <span class="title function_">array</span>(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="string">&#x27;hello&#x27;</span>);</span><br></pre></td></tr></table></figure>
@@ -669,10 +651,7 @@
 <p>取数组下标，如果越界了，就会:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">undefined</span></span><br></pre></td></tr></table></figure>
 
-<ol start="7">
-<li>对象</li>
-</ol>
-<ul>
+<h3 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h3><ul>
 <li>对象是大括号，数组中是中括号</li>
 <li>JavaScript中所有的键都是字符串，值是任意对象！</li>
 </ul>
@@ -706,17 +685,11 @@
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">person.<span class="title function_">hasOwnProperty</span>(<span class="string">&#x27;toString&#x27;</span>)</span><br><span class="line"><span class="literal">false</span></span><br><span class="line">person.<span class="title function_">hasOwnProperty</span>(<span class="string">&#x27;age&#x27;</span>)</span><br><span class="line"><span class="literal">true</span></span><br></pre></td></tr></table></figure>
 
-<ol start="8">
-<li>严格检查模式</li>
-</ol>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&#x27;use strict&#x27;</span>    <span class="comment">//严格检查模式，预防Javascript的随意性导致产生的一些问题，必须写在Javascript的第一行</span></span><br><span class="line"><span class="comment">//局部变量建议使用let去定义</span></span><br></pre></td></tr></table></figure>
+<h3 id="严格检查模式"><a href="#严格检查模式" class="headerlink" title="严格检查模式"></a>严格检查模式</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&#x27;use strict&#x27;</span>    <span class="comment">//严格检查模式，预防Javascript的随意性导致产生的一些问题，必须写在Javascript的第一行</span></span><br><span class="line"><span class="comment">//局部变量建议使用let去定义</span></span><br></pre></td></tr></table></figure>
 
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">stricpt</span>&gt;</span></span><br><span class="line">&#x27;use strict&#x27;;</span><br><span class="line">   let i=1; </span><br><span class="line"><span class="tag">&lt;/<span class="name">stricpt</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<ol start="9">
-<li>字符串</li>
-</ol>
-<ul>
+<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><ul>
 <li>正常字符串我们使用单引号或双引号包裹</li>
 <li>多行字符串编写</li>
 </ul>
@@ -737,6 +710,7 @@
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[)</span><br><span class="line"> student.<span class="title function_">substring</span>(<span class="number">1</span>)  <span class="comment">//从第一个字符串截取到最后一个字符串</span></span><br><span class="line"> student.<span class="title function_">substringt</span>(<span class="number">1</span>,<span class="number">3</span>)  <span class="comment">//[1,3)</span></span><br></pre></td></tr></table></figure>
 
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><p>- </p>
 
       
     </div>

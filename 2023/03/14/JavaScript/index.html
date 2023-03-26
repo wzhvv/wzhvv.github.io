@@ -22,15 +22,15 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="JavaScript入门引入JavaScript 内部脚本  123&lt;script&gt;    &#x2F;&#x2F;........&lt;&#x2F;script&gt;    &#x2F;&#x2F;可以出现多次，在html任意位置   外部脚本  abs.js 1&#x2F;&#x2F;........  test.html 1&lt;script src&#x3D;&quot;abs.js&quot;&gt;&lt;&#x2F;script&gt;  基础语法 定义">
+  <meta name="description" content="JavaScript入门引入JavaScript 内部脚本  123&lt;script&gt;    &#x2F;&#x2F;........&lt;&#x2F;script&gt;    &#x2F;&#x2F;可以出现多次，在html任意位置   外部脚本  abs.js 1&#x2F;&#x2F;........  test.html 1&lt;script src&#x3D;&quot;abs.js&quot;&gt;&lt;&#x2F;script&gt;  基础语法定义变">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaScript">
 <meta property="og:url" content="http://example.com/2023/03/14/JavaScript/index.html">
 <meta property="og:site_name" content="HAO">
-<meta property="og:description" content="JavaScript入门引入JavaScript 内部脚本  123&lt;script&gt;    &#x2F;&#x2F;........&lt;&#x2F;script&gt;    &#x2F;&#x2F;可以出现多次，在html任意位置   外部脚本  abs.js 1&#x2F;&#x2F;........  test.html 1&lt;script src&#x3D;&quot;abs.js&quot;&gt;&lt;&#x2F;script&gt;  基础语法 定义">
+<meta property="og:description" content="JavaScript入门引入JavaScript 内部脚本  123&lt;script&gt;    &#x2F;&#x2F;........&lt;&#x2F;script&gt;    &#x2F;&#x2F;可以出现多次，在html任意位置   外部脚本  abs.js 1&#x2F;&#x2F;........  test.html 1&lt;script src&#x3D;&quot;abs.js&quot;&gt;&lt;&#x2F;script&gt;  基础语法定义变">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-03-14T11:55:13.000Z">
-<meta property="article:modified_time" content="2023-03-26T07:34:14.743Z">
+<meta property="article:modified_time" content="2023-03-26T08:01:52.524Z">
 <meta property="article:author" content="wzhvv">
 <meta name="twitter:card" content="summary">
 
@@ -226,7 +226,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-03-26 15:34:14" itemprop="dateModified" datetime="2023-03-26T15:34:14+08:00">2023-03-26</time>
+                <time title="修改时间：2023-03-26 16:01:52" itemprop="dateModified" datetime="2023-03-26T16:01:52+08:00">2023-03-26</time>
               </span>
 
           
@@ -275,10 +275,7 @@
 <p>test.html</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;abs.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="基础语法"><a href="#基础语法" class="headerlink" title="基础语法"></a>基础语法</h2><ol>
-<li>定义变量</li>
-</ol>
-<ul>
+<h2 id="基础语法"><a href="#基础语法" class="headerlink" title="基础语法"></a>基础语法</h2><h3 id="定义变量"><a href="#定义变量" class="headerlink" title="定义变量"></a>定义变量</h3><ul>
 <li>var定义的变量可以存放不同类型的值</li>
 <li>作用域比较大，全局变量</li>
 <li>可以重复定义</li>
@@ -289,40 +286,25 @@
 <p>Infinity     &#x2F;&#x2F;表示无限大</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> age=<span class="number">18</span>;</span><br><span class="line"><span class="keyword">var</span> name=<span class="string">&quot;张三&quot;</span>;</span><br></pre></td></tr></table></figure>
 
-<ol start="2">
-<li>条件控制</li>
-</ol>
-<p>同java ,  console.log(age) 可以在浏览器的控制台打印变量信息</p>
-<ol start="3">
-<li>等于</li>
-</ol>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">==    <span class="comment">//类型不一样，值一样，判断为true</span></span><br><span class="line">===   <span class="comment">//绝对等于，类型不一样，值一样，判断为false</span></span><br></pre></td></tr></table></figure>
+<h3 id="条件控制"><a href="#条件控制" class="headerlink" title="条件控制"></a>条件控制</h3><p>同java ,  console.log(age) 可以在浏览器的控制台打印变量信息</p>
+<h3 id="等于"><a href="#等于" class="headerlink" title="等于"></a>等于</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">==    <span class="comment">//类型不一样，值一样，判断为true</span></span><br><span class="line">===   <span class="comment">//绝对等于，类型不一样，值一样，判断为false</span></span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>NAN&#x3D;&#x3D;&#x3D;NAN,这个与所有值都不相等，包括自己。false</li>
 <li>只能通过isNaN(NaN)来判断这个数是否是NaN</li>
 </ul>
-<ol start="4">
-<li>浮点数问题</li>
-</ol>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="number">1</span>/<span class="number">3</span>)===(<span class="number">1</span>-<span class="number">2</span>/<span class="number">3</span>)<span class="comment">//false</span></span><br></pre></td></tr></table></figure>
+<h3 id="浮点数问题"><a href="#浮点数问题" class="headerlink" title="浮点数问题"></a>浮点数问题</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="number">1</span>/<span class="number">3</span>)===(<span class="number">1</span>-<span class="number">2</span>/<span class="number">3</span>)<span class="comment">//false</span></span><br></pre></td></tr></table></figure>
 
 <blockquote>
 <p>尽量避免使用浮点数进行运算，存在精度问题！</p>
 </blockquote>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Math</span>.<span class="title function_">abs</span>(<span class="number">1</span>/<span class="number">3</span>-(<span class="number">1</span>-<span class="number">2</span>/<span class="number">3</span>))&lt;<span class="number">0.00000001</span></span><br></pre></td></tr></table></figure>
 
-<ol start="5">
-<li>null和undefined</li>
-</ol>
-<ul>
+<h3 id="null和undefined"><a href="#null和undefined" class="headerlink" title="null和undefined"></a>null和undefined</h3><ul>
 <li>null                    &#x2F;&#x2F;空</li>
 <li>undefined        &#x2F;&#x2F;未定义</li>
 </ul>
-<ol start="6">
-<li>数组</li>
-</ol>
-<ul>
+<h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><ul>
 <li>Java的数值必须是相同类型的对象，JS中不需要这样</li>
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="string">&#x27;hello&#x27;</span>,<span class="literal">null</span>,<span class="literal">true</span>];</span><br><span class="line"><span class="keyword">new</span> <span class="title function_">array</span>(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="string">&#x27;hello&#x27;</span>);</span><br></pre></td></tr></table></figure>
@@ -330,10 +312,7 @@
 <p>取数组下标，如果越界了，就会:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">undefined</span></span><br></pre></td></tr></table></figure>
 
-<ol start="7">
-<li>对象</li>
-</ol>
-<ul>
+<h3 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h3><ul>
 <li>对象是大括号，数组中是中括号</li>
 <li>JavaScript中所有的键都是字符串，值是任意对象！</li>
 </ul>
@@ -367,17 +346,11 @@
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">person.<span class="title function_">hasOwnProperty</span>(<span class="string">&#x27;toString&#x27;</span>)</span><br><span class="line"><span class="literal">false</span></span><br><span class="line">person.<span class="title function_">hasOwnProperty</span>(<span class="string">&#x27;age&#x27;</span>)</span><br><span class="line"><span class="literal">true</span></span><br></pre></td></tr></table></figure>
 
-<ol start="8">
-<li>严格检查模式</li>
-</ol>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&#x27;use strict&#x27;</span>    <span class="comment">//严格检查模式，预防Javascript的随意性导致产生的一些问题，必须写在Javascript的第一行</span></span><br><span class="line"><span class="comment">//局部变量建议使用let去定义</span></span><br></pre></td></tr></table></figure>
+<h3 id="严格检查模式"><a href="#严格检查模式" class="headerlink" title="严格检查模式"></a>严格检查模式</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&#x27;use strict&#x27;</span>    <span class="comment">//严格检查模式，预防Javascript的随意性导致产生的一些问题，必须写在Javascript的第一行</span></span><br><span class="line"><span class="comment">//局部变量建议使用let去定义</span></span><br></pre></td></tr></table></figure>
 
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">stricpt</span>&gt;</span></span><br><span class="line">&#x27;use strict&#x27;;</span><br><span class="line">   let i=1; </span><br><span class="line"><span class="tag">&lt;/<span class="name">stricpt</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<ol start="9">
-<li>字符串</li>
-</ol>
-<ul>
+<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><ul>
 <li>正常字符串我们使用单引号或双引号包裹</li>
 <li>多行字符串编写</li>
 </ul>
@@ -398,6 +371,7 @@
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[)</span><br><span class="line"> student.<span class="title function_">substring</span>(<span class="number">1</span>)  <span class="comment">//从第一个字符串截取到最后一个字符串</span></span><br><span class="line"> student.<span class="title function_">substringt</span>(<span class="number">1</span>,<span class="number">3</span>)  <span class="comment">//[1,3)</span></span><br></pre></td></tr></table></figure>
 
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><p>- </p>
 
     </div>
 
@@ -495,7 +469,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JavaScript%E5%85%A5%E9%97%A8"><span class="nav-number">1.</span> <span class="nav-text">JavaScript入门</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%95%E5%85%A5JavaScript"><span class="nav-number">1.1.</span> <span class="nav-text">引入JavaScript</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95"><span class="nav-number">1.2.</span> <span class="nav-text">基础语法</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JavaScript%E5%85%A5%E9%97%A8"><span class="nav-number">1.</span> <span class="nav-text">JavaScript入门</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%95%E5%85%A5JavaScript"><span class="nav-number">1.1.</span> <span class="nav-text">引入JavaScript</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95"><span class="nav-number">1.2.</span> <span class="nav-text">基础语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E5%8F%98%E9%87%8F"><span class="nav-number">1.2.1.</span> <span class="nav-text">定义变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9D%A1%E4%BB%B6%E6%8E%A7%E5%88%B6"><span class="nav-number">1.2.2.</span> <span class="nav-text">条件控制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AD%89%E4%BA%8E"><span class="nav-number">1.2.3.</span> <span class="nav-text">等于</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%AE%E7%82%B9%E6%95%B0%E9%97%AE%E9%A2%98"><span class="nav-number">1.2.4.</span> <span class="nav-text">浮点数问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null%E5%92%8Cundefined"><span class="nav-number">1.2.5.</span> <span class="nav-text">null和undefined</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E7%BB%84"><span class="nav-number">1.2.6.</span> <span class="nav-text">数组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%B9%E8%B1%A1"><span class="nav-number">1.2.7.</span> <span class="nav-text">对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%A5%E6%A0%BC%E6%A3%80%E6%9F%A5%E6%A8%A1%E5%BC%8F"><span class="nav-number">1.2.8.</span> <span class="nav-text">严格检查模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="nav-number">1.2.9.</span> <span class="nav-text">字符串</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%BD%E6%95%B0"><span class="nav-number">1.2.10.</span> <span class="nav-text">函数</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
