@@ -17,32 +17,6 @@
     
     
     <entry>
-      <title>数据安全传输</title>
-      <link href="/2023/10/14/project/"/>
-      <url>/2023/10/14/project/</url>
-      
-        <content type="html"><![CDATA[<h1 id="数据安全传输项目"><a href="#数据安全传输项目" class="headerlink" title="数据安全传输项目"></a>数据安全传输项目</h1><h2 id="项目整体架构图"><a href="#项目整体架构图" class="headerlink" title="项目整体架构图"></a>项目整体架构图</h2><p>![snipaste_20180504_163951](F:\资料\第5阶段-跨平台企业项目实战\day01 - 项目介绍-密码学知识\01-课程资料\笔记\assets\snipaste_20180504_163951.png)</p><ul><li>网络通信：数据传输-&gt;需要保证数据的安全性。对数据加密</li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>python</title>
-      <link href="/2023/09/29/python/"/>
-      <url>/2023/09/29/python/</url>
-      
-        <content type="html"><![CDATA[<h1 id="python"><a href="#python" class="headerlink" title="python"></a>python</h1><h2 id="python基础"><a href="#python基础" class="headerlink" title="python基础"></a>python基础</h2><h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><ul><li>单行注释：#</li><li>多行注释：””” 注释内容”””</li></ul><h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><ul><li>变量定义：变量名&#x3D;变量值</li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>QT</title>
       <link href="/2023/09/15/QT/"/>
       <url>/2023/09/15/QT/</url>
